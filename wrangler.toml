@@ -1,0 +1,9 @@
+name = "subscription"
+compatibility_date = "2025-01-15"
+
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "subscription-db"
+database_id = "" # Will be filled after creating D1 database
