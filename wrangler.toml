@@ -6,4 +6,4 @@ pages_build_output_dir = "dist"
 [[d1_databases]]
 binding = "DB"
 database_name = "subscription-db"
-database_id = "" # Will be filled after creating D1 database
+database_id = "937d2c22-43c7-4fbf-9f54-44b38deecdcf"

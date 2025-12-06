@@ -15,7 +15,17 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   nitro: {
-    preset: 'cloudflare-pages'
+    preset: 'cloudflare-pages',
+    prerender: {
+      autoSubfolderIndex: false
+    },
+    cloudflare: {
+      pages: {
+        routes: {
+          exclude: ['/api/*']
+        }
+      }
+    }
   },
 
   content: {
