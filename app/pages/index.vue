@@ -42,6 +42,19 @@ const openOrderPopup = () => {
   })
 }
 
+const openDiagnosticPopup = () => {
+  if (!import.meta.client || !window.Tally) return
+
+  window.Tally.openPopup('jaeo4J', {
+    layout: 'modal',
+    width: 700,
+    emoji: { text: '⚡', animation: 'wave' },
+    onSubmit: () => {
+      window.location.href = 'https://whop.com'
+    }
+  })
+}
+
 useHead({
   script: [
     {
@@ -81,6 +94,9 @@ useHead({
           <UBadge color="primary" variant="soft" size="md">$1,500 Fixed Price</UBadge>
           <UBadge color="success" variant="soft" size="md">2+ Weeks (It Depends)</UBadge>
         </div>
+        <p class="text-sm text-center text-muted mt-4">
+          Looking for a quick win? Try our <span class="text-primary font-medium">$29 Systems Diagnostic</span>, delivered in 24–72 hours.
+        </p>
       </template>
     </UPageHero>
 
@@ -203,6 +219,57 @@ useHead({
             </div>
             <h3 class="font-semibold text-lg">Launch + Vault Access</h3>
             <p class="text-sm text-muted">Complete deliverables, training materials, and lifetime access to our agency vault.</p>
+          </UCard>
+        </div>
+      </UPageSection>
+
+      <!-- $29 Quick Win Section -->
+      <UPageSection :title="(page.sections as any)?.quickWin?.title">
+        <div class="max-w-3xl mx-auto">
+          <UCard class="relative overflow-hidden bg-gradient-to-br from-primary/5 to-green-500/5">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
+            <div class="relative space-y-6">
+              <div class="text-center space-y-3">
+                <UBadge color="success" variant="solid" size="lg">⚡ Fast Track</UBadge>
+                <div class="flex items-baseline justify-center gap-2">
+                  <span class="text-4xl md:text-5xl font-bold text-primary">$29</span>
+                  <span class="text-muted text-sm">24-72 hour delivery</span>
+                </div>
+                <p class="text-base max-w-xl mx-auto">{{ (page.sections as any)?.quickWin?.description }}</p>
+              </div>
+
+              <div class="bg-background/60 backdrop-blur-sm rounded-lg p-6 space-y-3">
+                <p class="font-semibold text-center mb-4">What You'll Receive:</p>
+                <div class="grid md:grid-cols-2 gap-3">
+                  <div 
+                    v-for="(feature, idx) in (page.sections as any)?.quickWin?.features" 
+                    :key="idx"
+                    class="flex items-start gap-2"
+                  >
+                    <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                    <span class="text-sm">{{ feature }}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center space-y-2">
+                <p class="text-sm text-muted">{{ (page.sections as any)?.quickWin?.blurb }}</p>
+              </div>
+
+              <div class="pt-2">
+                <UButton
+                  block
+                  color="primary"
+                  size="xl"
+                  icon="i-lucide-zap"
+                  trailing
+                  @click="openDiagnosticPopup"
+                >
+                  Get Your $29 Systems Diagnostic
+                </UButton>
+                <p class="text-xs text-center text-muted mt-3">Delivered within 24–72 hours • No subscription required</p>
+              </div>
+            </div>
           </UCard>
         </div>
       </UPageSection>
@@ -492,6 +559,26 @@ useHead({
             />
           </div>
         </UCard>
+      </UPageSection>
+
+      <!-- Footer CTA for $29 Diagnostic -->
+      <UPageSection>
+        <div class="max-w-2xl mx-auto">
+          <UCard class="bg-gradient-to-r from-primary/10 to-green-500/10 border-primary/20">
+            <div class="text-center space-y-4">
+              <h3 class="text-2xl font-bold">Not Ready for a Full System Yet?</h3>
+              <p class="text-muted">Start with a <span class="font-semibold text-foreground">$29 Systems Diagnostic</span> and get a clear snapshot of your operations within 24–72 hours.</p>
+              <UButton
+                color="primary"
+                size="lg"
+                variant="soft"
+                @click="openDiagnosticPopup"
+              >
+                Get the $29 Diagnostic
+              </UButton>
+            </div>
+          </UCard>
+        </div>
       </UPageSection>
 
       <!-- FAQ -->

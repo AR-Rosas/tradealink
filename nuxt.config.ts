@@ -7,8 +7,21 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     'nuxt-studio',
-    '@nuxt/hints'
+    '@nuxt/hints',
+    '@nuxthub/core'
   ],
+
+  ui: {
+    // Enable automatic component detection for tree-shaking
+    // Only components actually used in the project will be included
+    experimental: {
+      componentDetection: true
+    }
+  },
+
+    hub: {
+    // your hub configuration
+  },
 
   devtools: {
     enabled: true
@@ -23,6 +36,8 @@ export default defineNuxtConfig({
     },
     compatibilityDate: '2025-01-15'
   },
+
+  debug: true,
 
 
 
