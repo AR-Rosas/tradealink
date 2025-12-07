@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
@@ -15,17 +17,11 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   nitro: {
-    preset: 'cloudflare-pages',
+    // Remove Cloudflare-specific preset to keep Nitro portable.
     prerender: {
       autoSubfolderIndex: false
     },
-    cloudflare: {
-      pages: {
-        routes: {
-          exclude: ['/api/*']
-        }
-      }
-    }
+    compatibilityDate: '2025-01-15'
   },
 
   content: {
