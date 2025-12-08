@@ -67,11 +67,19 @@ onMounted(() => {
   // }
 })
 
-const posts = computed<DirectoryPost[]>(() => {
-  const docs = (directoryDocs.value ?? []) as unknown as DirectoryPost[]
-  return docs
-    .slice()
-    .sort((a, b) => a.title.localeCompare(b.title))
+const posts = computed(() => {
+  if (!directoryDocs.value) return []
+  
+  return directoryDocs.value
+    .map((doc: any) => ({
+      slug: doc.slug,
+      title: doc.title,
+      description: doc.description,
+      category: doc.category,
+      date: doc.date,
+      tags: doc.tags || []
+    }))
+    .sort((a: any, b: any) => a.title.localeCompare(b.title))
 })
 
 const columns = [{
