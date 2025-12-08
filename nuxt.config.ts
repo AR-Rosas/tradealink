@@ -7,8 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     'nuxt-studio',
-    '@nuxt/hints',
-    '@nuxthub/core'
+    '@nuxt/hints'
   ],
 
   ui: {
@@ -30,7 +29,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   nitro: {
-    // Remove Cloudflare-specific preset to keep Nitro portable.
+    // Target Cloudflare Pages preset for zero-config deployment on Cloudflare
+    // Use 'cloudflare_pages' so Nitro emits a Pages-compatible output.
+    // You can also override at build time with NITRO_PRESET or --preset.
+    preset: 'cloudflare_pages',
     prerender: {
       autoSubfolderIndex: false
     },
