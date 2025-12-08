@@ -21,9 +21,13 @@ declare global {
   }
 }
 
-const { data: directoryDocs } = await useAsyncData('directory-entries', () =>
-  queryCollection('directory').all()
-)
+const { data: posts } = await useAsyncData('directory-entries', async () => {
+  const docs = await queryCollection('directory')
+    .order('title', 'ASC')
+    .all()
+  
+  return docs
+})
 
 const hasUnlockedDirectory = useState('directory-unlocked', () => false)
 
@@ -37,20 +41,6 @@ const enableAccess = () => {
 const openTallyForm = () => {
   // Form disabled - auto-unlock for now
   enableAccess()
-  // if (import.meta.client && window.Tally) {
-  //   window.Tally.openPopup('xXVMRk', {
-  //     layout: 'modal',
-  //     width: 700,
-  //     emoji: {
-  //       text: '👋',
-  //       animation: 'wave'
-  //     },
-  //     onSubmit: (payload: any) => {
-  //       console.log('Form submitted:', payload)
-  //       enableAccess()
-  //     }
-  //   })
-  // }
 }
 
 onMounted(() => {
@@ -62,24 +52,8 @@ onMounted(() => {
   hasUnlockedDirectory.value = true
   localStorage.setItem(ACCESS_STORAGE_KEY, 'true')
   
-  // if (localStorage.getItem(ACCESS_STORAGE_KEY) === 'true') {
-  //   hasUnlockedDirectory.value = true
-  // }
-})
-
-const posts = computed(() => {
-  if (!directoryDocs.value) return []
-  
-  return directoryDocs.value
-    .map((doc: any) => ({
-      slug: doc.slug,
-      title: doc.title,
-      description: doc.description,
-      category: doc.category,
-      date: doc.date,
-      tags: doc.tags || []
-    }))
-    .sort((a: any, b: any) => a.title.localeCompare(b.title))
+  // Debug: Log the data
+  console.log('Directory posts:', posts.value)
 })
 
 const columns = [{
