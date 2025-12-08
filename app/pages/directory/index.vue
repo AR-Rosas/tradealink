@@ -75,12 +75,15 @@ const posts = computed<DirectoryPost[]>(() => {
 })
 
 const columns = [{
+  id: 'title',
   key: 'title',
   label: 'Category'
 }, {
+  id: 'description',
   key: 'description',
   label: 'Description'
 }, {
+  id: 'actions',
   key: 'actions',
   label: ''
 }] as const
