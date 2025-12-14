@@ -14,7 +14,7 @@ if (!page.value) {
 }
 
 const title = 'All Services — Tradealink'
-const description = 'Professional business services at $1,500 flat. Delivery timeline depends on the service. Each includes lifetime vault access.'
+const description = 'Professional business services at $1,500 flat. Delivery timeline depends on the service. Each includes complete handover with full ownership and training.'
 
 useSeoMeta({
   title,

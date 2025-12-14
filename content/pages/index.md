@@ -2,11 +2,11 @@
 slug: index
 hero:
   title: $1,500 Business Automation & Systems — One Service, Done Right
-  description: Choose from our professional services designed to streamline your business operations. Fixed price, expert delivery, and lifetime access to our agency vault of tools, templates, and resources.
+  description: Choose from our professional services designed to streamline your business operations. Fixed price, expert delivery, and full documentation so you own your system completely.
 sections:
   whatWeDo:
     title: Professional Services — $1,500 Each
-    description: Choose from our services below or describe what you need in the booking form. Delivery time depends on service complexity (typically 2+ weeks). Includes full documentation and access to our internal agency vault.
+    description: Choose from our services below or describe what you need in the booking form. Delivery timeline depends on scope (small systems & audits: 2–5 days; full automation/CRM builds: 2–3 weeks). Includes full documentation and training.
     tasks:
       - Business Workflow Automation System
       - Operations Audit + SOP Creation
@@ -32,7 +32,7 @@ sections:
       - title: Kickoff in Nuxt Studio
         description: We align on content structure and wire Studio for editing.
       - title: Ship Fast with Hand-off
-        description: Deliverables + access to our internal resources for future work.
+        description: Deliverables + comprehensive video training on how to use it.
   quickWin:
     title: Need Research Fast? Get Internet Research for $39
     description: A focused internet research service that gathers, verifies, and organizes useful information about a person, business, product, or topic. Delivered within 24–72 hours.
@@ -52,7 +52,7 @@ sections:
     tiers:
       - name: Any Business Service
         price: "$1,500 flat"
-        blurb: "Choose from our professional services. All include complete deliverables and lifetime vault access."
+        blurb: "Choose from our professional services. All include complete deliverables and training."
         examples:
           - Workflow automation systems
           - CRM & pipeline setup
@@ -63,23 +63,21 @@ sections:
         tallyFormId: q45GQg
     includes:
       - Fixed $1,500 price for any service
-      - Delivery timeline depends on service (typically 2+ weeks)
+      - Delivery by scope (small systems: 2–5 days; full builds: 2–3 weeks)
       - Complete deliverables with documentation
-      - Lifetime access to agency vault (tools, templates, themes, wiki)
+      - Recorded video training on your new system
       - No hidden fees or subscriptions
   vault:
-    title: "Bonus: Lifetime Vault Access Included"
-    intro: Every service purchase includes permanent access to our private agency vault.
-    details: Our vault contains the same professional resources we use internally to deliver client work efficiently.
+    title: "Included: You Own It All"
+    intro: We don't just build it; we teach you how to run it.
+    details: You receive a complete handover package with every service, ensuring you aren't dependent on us forever.
     items:
-      - Agency-grade templates and workflows
-      - SOP documentation templates
-      - Automation blueprints and scripts
-      - Business system frameworks
-      - Training materials and guides
-      - Pre-built calculators and tools
-      - Design themes and UI kits
-      - Internal wiki and knowledge base
+      - Full Source Code / System Access
+      - Step-by-Step SOP Documentation
+      - Video Walkthroughs & Tutorials
+      - Admin & Maintenance Guides
+      - 30 Days of Post-Launch Support
+      - Commercial Usage Rights
   directory:
     title: Free Tools Directory
     intro: A curated directory of 200+ free tools used daily by developers, students, freelancers, and small businesses.
@@ -105,7 +103,7 @@ sections:
     title: FAQ
     items:
       - label: How fast is delivery?
-        content: "Most deliveries land in 2–5 days depending on scope."
+        content: "Delivery timeline depends on scope: small systems & audits take 2–5 days; full automation/CRM builds take 2–3 weeks."
       - label: What types of files can I upload?
         content: "PDF, DOCX, TXT, JPG, PNG, Google links, etc."
       - label: Do I need an account?

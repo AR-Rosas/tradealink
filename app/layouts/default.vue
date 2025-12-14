@@ -12,7 +12,7 @@
         <ULink to="/services" class="text-sm font-medium hover:text-primary transition-colors">Services</ULink>
         <ULink to="/#task-pricing" class="text-sm font-medium hover:text-primary transition-colors">Pricing</ULink>
         <ULink to="/" class="text-sm font-medium hover:text-primary transition-colors">Free Tools</ULink>
-        <ULink to="/vault" class="text-sm font-medium hover:text-primary transition-colors">Vault</ULink>
+
       </nav>
 
       <template #right>

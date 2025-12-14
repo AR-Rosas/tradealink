@@ -187,7 +187,7 @@ useSeoMeta({
               Need More Than Tools?
             </h2>
             <p class="text-lg text-muted max-w-2xl mx-auto">
-              Get complete business systems built for you. Fixed $1,500 price per service with lifetime vault access included.
+              Get complete business systems built for you. Fixed $1,500 price per service with full ownership and training included.
             </p>
           </div>
 
@@ -247,11 +247,11 @@ useSeoMeta({
               </div>
               <div class="flex items-start gap-2">
                 <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                <span class="text-sm">Delivery in 2+ weeks (depends on service)</span>
+                <span class="text-sm">Delivery by scope (small: 2–5 days; full: 2–3 weeks)</span>
               </div>
               <div class="flex items-start gap-2">
                 <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                <span class="text-sm">Lifetime access to agency vault</span>
+                <span class="text-sm">30 days post-launch support</span>
               </div>
             </div>
           </div>

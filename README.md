@@ -2,15 +2,15 @@
 
 [![Nuxt UI](https://img.shields.io/badge/Built%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 
-Tradealink offers professional business services at a fixed $1,500 price point. Choose from workflow automation, CRM setup, AI integration, custom tools, data systems, and more. Every service includes complete deliverables, documentation, and lifetime access to our internal agency vault (tools, templates, SOPs, and resources). The site also features a curated free tools directory with 200+ resources for developers, students, freelancers, and small businesses.
+Tradealink offers professional business services at a fixed $1,500 price point. Choose from workflow automation, CRM setup, AI integration, custom tools, data systems, and more. Every service includes complete deliverables, comprehensive documentation, video training, and full ownership of everything we build. The site also features a curated free tools directory with 200+ resources for developers, students, freelancers, and small businesses.
 
 ## Key Features
 
-- Fixed-price professional services: $1,500 per service (delivery time depends on complexity, typically 2+ weeks)
+- Fixed-price professional services: $1,500 per service (delivery by scope: small systems 2–5 days; full builds 2–3 weeks)
 - Quick research service: $39 Internet Research Service delivered in 24–72 hours
 - 16+ professional services including workflow automation, CRM setup, AI integration, data systems, and more
 - Tally popup for intake with Whop checkout integration
-- Lifetime vault access included with every $1,500 service (agency templates, SOPs, tools, themes, wiki)
+- Complete ownership package: full source code, step-by-step SOPs, video training, 30 days support
 - "Trade a link" unlock flow for the free tools directory (200+ curated resources)
 - Directory organized as content pages powered by `@nuxt/content`
 - Mobile-first UI built on `@nuxt/ui` components and Iconify icons
@@ -19,7 +19,7 @@ Tradealink offers professional business services at a fixed $1,500 price point. 
 
 ### Premium Services ($1,500 flat)
 
-All services include complete deliverables, documentation, and lifetime vault access:
+All services include complete deliverables, comprehensive documentation, and full ownership:
 
 - Business Workflow Automation System
 - Operations Audit + SOP Creation
@@ -58,11 +58,11 @@ Includes:
 - Quick Research: $39 Internet Research Service delivered in 24–72 hours for fast insights
 - Smooth Scroll: "Describe Your Service" scrolls to pricing for quicker conversion
 - Tally Intake: Popup with Whop checkout integration (service booking: `q45GQg`, diagnostic: `jaeo4J`)
-- Vault Access: Every $1,500 service includes lifetime access to agency templates, SOPs, automation scripts, tools, themes, and internal wiki
+- Complete Handover: Every $1,500 service includes full source code/system access, SOPs, video training, admin guides, and 30 days support
 - Directory Unlock: Tally popup (`xXVMRk`) with localStorage gate (`tradealink-directory-unlocked`) to reveal 200+ free tools
 - Organized Directory: Alphabetically sorted, mobile-first list of categories with detailed descriptions
 - SEO & Meta: `useHead` + `useSeoMeta` applied at app and page levels
-- Prerendered Routes: `/`, `/services`, `/vault`, `/directory`, `/blog`, and nested routes for fast static delivery
+- Prerendered Routes: `/`, `/services`, `/directory`, `/blog`, and nested routes for fast static delivery
 - Content Schema: Validated via zod in `content.config.ts` for consistency across directory and blog pages
 - Icons: Iconify-powered icons (Lucide, Simple Icons) via `UIcon` shorthand like `i-lucide-arrow-right`
 
@@ -91,8 +91,8 @@ pnpm preview
 1. **Choose a Service**: Browse the service list on the landing page (`app/pages/index.vue`) or visit the dedicated services page
 2. **Book via Tally**: Click "Describe Your Service" to open a Tally popup that collects project details
 3. **Checkout via Whop**: On form submission, redirect to Whop for secure $1,500 payment
-4. **Service Delivery**: Receive complete deliverables with documentation (timeline depends on service complexity, typically 2+ weeks)
-5. **Vault Access**: Get lifetime access to our agency vault containing templates, SOPs, automation scripts, tools, themes, and internal wiki
+4. **Service Delivery**: Receive complete deliverables with documentation (small systems: 2–5 days; full builds: 2–3 weeks)
+5. **Complete Handover**: Get full ownership including source code, step-by-step SOPs, video walkthroughs, admin guides, and 30 days of post-launch support
 
 ### Internet Research Service ($39)
 
@@ -129,40 +129,39 @@ Markdown pages live in `content/directory/` and include link-based sections:
 
 ## About
 
-Tradealink delivers professional business services at a transparent $1,500 fixed price. We handle workflow automation, CRM setup, AI integration, custom tools, data systems, and more. Every service includes complete deliverables, documentation, and lifetime access to our internal agency vault (templates, SOPs, automation scripts, tools, themes, and wiki).
+Tradealink delivers professional business services at a transparent $1,500 fixed price. We handle workflow automation, CRM setup, AI integration, custom tools, data systems, and more. Every service includes complete deliverables, comprehensive documentation, video training, and full ownership of everything we build.
 
 ### How We Work
 
 - **Intake**: Book via Tally; we gather the essentials about your service needs
-- **Kickoff**: Align on requirements, deliverables, and timeline (typically 2+ weeks depending on complexity)
+- **Kickoff**: Align on requirements, deliverables, and timeline (small systems: 2–5 days; full builds: 2–3 weeks)
 - **Execution**: Build your system with best-practice tools and frameworks
-- **Handoff**: Deliverables, documentation, and immediate vault access for future self-service
+- **Handoff**: Complete deliverables, documentation, video training, and full system ownership
 
 ### What's Included
 
 - **Fixed Price**: $1,500 flat per service, no hidden fees or subscriptions
 - **Complete Deliverables**: Fully functional systems with documentation
-- **Lifetime Vault Access**: Agency templates, SOPs, automation blueprints, tools, themes, internal wiki
-- **Expert Delivery**: Professional implementation with 2+ weeks typical timeline (depends on service complexity)
+- **Full Ownership**: Source code, step-by-step SOPs, video walkthroughs, admin guides, 30 days support
+- **Expert Delivery**: Professional implementation (small systems: 2–5 days; full builds: 2–3 weeks)
 - **No Accounts Needed**: Whop handles secure access automatically
 
-### Vault Contents
+### Complete Handover Package
 
-Every service purchase includes permanent access to:
+Every service purchase includes:
 
-- Agency-grade templates and workflows
-- SOP documentation templates
-- Automation blueprints and scripts
-- Business system frameworks
-- Training materials and guides
-- Pre-built calculators and tools
-- Design themes and UI kits
-- Internal wiki and knowledge base
+- Full source code and system access
+- Step-by-step SOP documentation
+- Video walkthroughs and tutorials
+- Admin and maintenance guides
+- 30 days of post-launch support
+- Commercial usage rights
+- No vendor lock-in
 
 ### Accessibility & Performance
 
 - Mobile-first design using Nuxt UI primitives
-- Pre-rendered static routes for quick loads (landing, services, vault, directory, blog)
+- Pre-rendered static routes for quick loads (landing, services, directory, blog)
 - Minimal external scripts beyond Tally for forms
 - YAML-driven content for easy updates without code changes
 
@@ -506,7 +505,7 @@ routeRules: {
 - **Directory Unlock** (`app/pages/directory/index.vue`): Popup `xXVMRk` unlocks access by setting localStorage key `tradealink-directory-unlocked`. UI state reflects unlock with `useState('directory-unlocked')` and sorted listing from `queryCollection('directory').all()`
 - All premium service purchases ($1,500) are processed through Whop
 - All diagnostic purchases ($39) are processed through Whop
-- Vault access is granted automatically via Whop after premium service purchase
+- Complete handover package is delivered after service completion
 
 ---
 
