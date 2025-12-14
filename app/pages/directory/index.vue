@@ -87,65 +87,65 @@ useSeoMeta({
 </script>
 
 <template>
-  <UContainer v-if="hasUnlockedDirectory" class="py-4 md:py-6 space-y-6">
-    <div class="text-center space-y-3 mb-8">
+  <UContainer v-if="hasUnlockedDirectory" class="py-6 md:py-10 space-y-8">
+    
+    <div class="text-center space-y-3">
       <div class="flex items-center justify-center gap-3">
-        <UIcon name="i-lucide-compass" class="w-6 h-6 text-primary" />
-        <h1 class="text-2xl md:text-3xl font-bold">
-          Free Tools Directory
+        <UIcon name="i-lucide-layout-grid" class="w-7 h-7 text-primary" />
+        <h1 class="text-3xl md:text-4xl font-bold">
+          Tradealink Resource Directory
         </h1>
         <UBadge color="primary" variant="soft" size="md">
           Unlocked
         </UBadge>
       </div>
+      <p class="text-base text-muted max-w-xl mx-auto">
+        Explore our curated collection of 200+ free tools for developers, freelancers, and small businesses. Click any category to discover resources.
+      </p>
+    </div>
 
-      <!-- Added $39 Whop CTA -->
-      <div class="flex items-center justify-center gap-3 mt-4">
+    <UCard class="max-w-3xl mx-auto bg-primary/5 dark:bg-primary/10 border-primary/20 shadow-lg">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-center sm:text-left space-y-1">
+          <p class="font-semibold text-lg">Need Insights Fast?</p>
+          <p class="text-sm text-muted">
+            Get our focused <strong>Internet Research Service</strong> for just $39—delivered in 24–72 hours.
+          </p>
+        </div>
         <a
           href="https://whop.com/tradealink/systems-diagnostic-report/"
           target="_blank"
           rel="noopener noreferrer"
-          class="no-underline"
+          class="no-underline shrink-0"
         >
-          <UButton color="primary" size="sm">
-            Get Internet Research Service - $39
+          <UButton color="primary" size="md" icon="i-lucide-zap" trailing>
+            Get $39 Research
           </UButton>
         </a>
       </div>
-      <p class="text-xs text-muted max-w-2xl mx-auto">
-        Focused internet research delivered in 24–72 hours — we gather, verify, and organize useful information about a person, business, product, or topic.
-      </p>
-
-      <p class="text-sm md:text-base text-muted max-w-xl mx-auto">
-        Explore our curated collection of 200+ free tools. Click any category to discover resources.
-      </p>
-    </div>
-
-    <div class="space-y-4">
+    </UCard>
+    
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <div
         v-for="post in posts"
         :key="post.slug"
-        class="flex items-center justify-between p-4 border border-gray-200 dark:border-gray-800 rounded-lg hover:border-primary transition-colors"
+        class="group"
       >
-        <div class="flex-1 min-w-0 pr-4">
-          <NuxtLink
-            :to="`/directory/${post.slug}`"
-            class="block group"
-          >
-            <h3 class="font-medium group-hover:text-primary transition-colors">
-              {{ post.title }}
-            </h3>
-            <p class="text-sm text-muted line-clamp-2 mt-1">
-              {{ post.description }}
-            </p>
-          </NuxtLink>
-        </div>
         <NuxtLink
           :to="`/directory/${post.slug}`"
-          class="flex items-center gap-1 text-muted hover:text-primary transition-colors shrink-0"
+          class="flex flex-col p-4 border border-gray-200 dark:border-gray-800 rounded-lg h-full hover:border-primary hover:shadow-md transition-all duration-200"
         >
-          <span class="text-xs hidden sm:inline">View</span>
-          <UIcon name="i-lucide-arrow-right" class="w-4 h-4" />
+          <h3 class="font-medium group-hover:text-primary transition-colors flex items-center gap-2">
+             <UIcon name="i-lucide-folder" class="w-4 h-4" />
+             {{ post.title }}
+          </h3>
+          <p class="text-sm text-muted line-clamp-3 mt-1 mb-3">
+            {{ post.description }}
+          </p>
+          <div class="mt-auto flex items-center text-xs text-primary font-medium">
+             View Resources 
+             <UIcon name="i-lucide-arrow-right" class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+          </div>
         </NuxtLink>
       </div>
     </div>
