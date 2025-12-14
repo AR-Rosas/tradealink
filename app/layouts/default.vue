@@ -17,8 +17,14 @@
 
       <template #right>
         <div class="flex items-center gap-3">
-          <UButton to="/#task-pricing" color="primary" variant="soft" size="xs" class="hidden sm:inline-flex">
-            
+          <UButton 
+            to="/#task-pricing" 
+            color="primary" 
+            variant="soft" 
+            size="xs" 
+            class="hidden sm:inline-flex"
+          >
+            Book Service
           </UButton>
           <ColorModeButton />
         </div>
@@ -39,7 +45,7 @@
             <span class="font-semibold">Tradealink</span>
           </NuxtLink>
           <p class="text-xs text-muted">
-            Fixed-price Nuxt Studio development
+            Business Automation & Systems
           </p>
         </div>
       </template>
@@ -48,6 +54,7 @@
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div class="flex flex-col sm:flex-row gap-3 text-xs">
             <ULink to="/services" class="text-muted hover:text-primary transition-colors">Services</ULink>
+            <ULink to="/#task-pricing" class="text-muted hover:text-primary transition-colors">Pricing</ULink>
           </div>
           <p class="text-xs text-muted">
             © {{ new Date().getFullYear() }}

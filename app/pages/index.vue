@@ -172,7 +172,7 @@ useSeoMeta({
     </div>
 
     <!-- Professional Services CTA Section -->
-    <div class="mt-16 mb-8">
+    <div id="task-pricing" class="mt-16 mb-8">
       <UCard class="relative overflow-hidden border-2 border-primary/20">
         <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
         <div class="absolute bottom-0 left-0 w-64 h-64 bg-green-500/5 rounded-full blur-3xl" />

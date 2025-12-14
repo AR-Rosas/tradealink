@@ -11,8 +11,9 @@ useHead({
   }
 })
 
-const title = 'Tradealink — $1,500 Nuxt Studio Web Development'
-const description = 'Book a focused, fixed-price engagement. We design, build, and ship a production-ready page or feature in Nuxt with Nuxt Studio.'
+// FIXED: Updated title/description to match new positioning
+const title = 'Tradealink — $1,500 Business Automation & Systems'
+const description = 'Fixed-price business systems, workflow automation, and custom tools. We design, build, and ship complete systems with full ownership.'
 
 useSeoMeta({
   title,
