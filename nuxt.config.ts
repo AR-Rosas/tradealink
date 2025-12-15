@@ -32,9 +32,10 @@ export default defineNuxtConfig({
     '/': { prerender: true },
     '/services': { prerender: true },
     '/pages': { redirect: '/' },
-    '/template': { prerender: true },
     '/blog': { prerender: true },
-    '/blog/**': { prerender: true }
+    '/blog/**': { prerender: true },
+    '/directory': { prerender: true },
+    '/directory/**': { prerender: true }
   },
 
   compatibilityDate: '2025-01-15',

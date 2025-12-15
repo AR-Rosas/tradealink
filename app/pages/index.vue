@@ -125,7 +125,7 @@ useSeoMeta({
       <NuxtLink
         v-for="(post, index) in posts"
         :key="post.slug"
-        :to="`/${post.slug}`"
+        :to="`/directory/${post.slug}`"
         :class="[
           'group relative overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800',
           'hover:border-primary hover:shadow-lg transition-all duration-300',

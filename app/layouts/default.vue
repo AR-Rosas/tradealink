@@ -4,47 +4,48 @@ const isOpen = ref(false)
 
 <template>
   <UApp>
-    <UHeader :panel="false">
-      <template #left>
-        <NuxtLink to="/" class="flex items-center gap-2 group">
-          <UIcon name="i-lucide-zap" class="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-          <AppLogo class="w-auto h-6 shrink-0" />
-        </NuxtLink>
-      </template>
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-background/80 border-b border-gray-200 dark:border-gray-800">
+      <UContainer>
+        <div class="flex items-center justify-between h-16">
+          <!-- Left: Logo -->
+          <NuxtLink to="/" class="flex items-center gap-2 group">
+            <UIcon name="i-lucide-zap" class="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+            <AppLogo class="w-auto h-6 shrink-0" />
+          </NuxtLink>
 
-      <template #center>
-        <nav class="hidden md:flex items-center gap-6">
-          <ULink to="/services" class="text-sm font-medium hover:text-primary transition-colors">Services</ULink>
-          <ULink to="/" class="text-sm font-medium hover:text-primary transition-colors">Pricing</ULink>
-          <ULink to="/directory" class="text-sm font-medium hover:text-primary transition-colors">Free Tools</ULink>
-        </nav>
-      </template>
+          <!-- Center: Nav Links (Desktop) -->
+          <nav class="hidden md:flex items-center gap-6">
+            <ULink to="/services" class="text-sm font-medium hover:text-primary transition-colors">Services</ULink>
+            <ULink to="/" class="text-sm font-medium hover:text-primary transition-colors">Pricing</ULink>
+            <ULink to="/directory" class="text-sm font-medium hover:text-primary transition-colors">Free Tools</ULink>
+          </nav>
 
-      <template #right>
-        <div class="flex items-center gap-3">
-          <UButton 
-            to="/" 
-            color="primary" 
-            variant="soft" 
-            size="xs" 
-            class="hidden sm:inline-flex"
-          >
-            Book Service
-          </UButton>
-          <ColorModeButton />
-          
-          <UButton
-            :icon="isOpen ? 'i-lucide-x' : 'i-lucide-menu'"
-            color="gray"
-            variant="ghost"
-            size="sm"
-            class="md:hidden"
-            @click="isOpen = !isOpen"
-            aria-label="Toggle menu"
-          />
+          <!-- Right: CTA + Color Mode + Mobile Menu -->
+          <div class="flex items-center gap-3">
+            <UButton 
+              to="/" 
+              color="primary" 
+              variant="soft" 
+              size="xs" 
+              class="hidden sm:inline-flex"
+            >
+              Book Service
+            </UButton>
+            <ColorModeButton />
+            
+            <UButton
+              :icon="isOpen ? 'i-lucide-x' : 'i-lucide-menu'"
+              color="neutral"
+              variant="ghost"
+              size="sm"
+              class="md:hidden"
+              @click="isOpen = !isOpen"
+              aria-label="Toggle menu"
+            />
+          </div>
         </div>
-      </template>
-    </UHeader>
+      </UContainer>
+    </header>
 
     <Transition
       enter-active-class="transition-all duration-200 ease-out"
