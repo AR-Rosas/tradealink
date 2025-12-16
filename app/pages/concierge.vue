@@ -4,7 +4,7 @@ const CONCIERGE_CHECKOUT_URL = 'https://whop.com'
 
 useSeoMeta({
   title: 'Concierge Build — $1,500 Done-for-you System · curateai.xyz',
-  description: 'Fixed-price $1,500 concierge build: automation, documentation, and handoff. Ideal when you want implementation, not just an answer.'
+  description: 'Fixed-price $1,500 concierge build: Nuxt web development + automations + documentation, with a clean handoff. Ideal when you want implementation, not just an answer.'
 })
 </script>
 
@@ -19,12 +19,12 @@ useSeoMeta({
       </div>
 
       <h1 class="text-3xl md:text-5xl font-bold tracking-tight">
-        Concierge Build: I implement the system end-to-end.
+        Concierge Build: I build and ship (Nuxt-first).
       </h1>
 
       <p class="text-base md:text-lg text-muted max-w-3xl mx-auto">
         This is the high-touch option for founders and small teams.
-        You bring the goal; I build the workflows, automations, and documentation—then hand it over so you own it.
+        You bring the goal; I build it in Nuxt (landing pages, dashboards, internal tools) plus the workflows, automations, and documentation—then hand it over so you own it.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -79,7 +79,7 @@ useSeoMeta({
           <div class="text-center space-y-2">
             <h2 class="text-2xl md:text-3xl font-bold">What Concierge can cover</h2>
             <p class="text-sm md:text-base text-muted max-w-2xl mx-auto">
-              If one competent operator can do it without being a specialist artist, it’s usually a fit.
+              If one competent operator can ship it fast in Nuxt (without needing specialist design/art), it’s usually a fit.
             </p>
           </div>
 
@@ -87,6 +87,10 @@ useSeoMeta({
             <div class="space-y-3">
               <p class="font-semibold">Great fits</p>
               <div class="space-y-2 text-sm">
+                <div class="flex items-start gap-2">
+                  <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
+                  <p>Nuxt web development: landing pages, marketing sites, dashboards, lightweight web apps (Nuxt UI, clean components)</p>
+                </div>
                 <div class="flex items-start gap-2">
                   <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
                   <p>Copywriting: landing page copy, offer positioning, email sequences, outreach scripts</p>
@@ -109,6 +113,10 @@ useSeoMeta({
             <div class="space-y-3">
               <p class="font-semibold">Not a fit (or needs a specialist)</p>
               <div class="space-y-2 text-sm">
+                <div class="flex items-start gap-2">
+                  <UIcon name="i-lucide-x" class="w-4 h-4 text-muted mt-0.5" />
+                  <p>Large custom engineering projects (multi-month apps, complex backend systems, heavy infra)</p>
+                </div>
                 <div class="flex items-start gap-2">
                   <UIcon name="i-lucide-x" class="w-4 h-4 text-muted mt-0.5" />
                   <p>Custom illustration, brand identity design, complex motion/video production</p>
@@ -206,6 +214,12 @@ useSeoMeta({
           <div class="space-y-2">
             <p class="font-semibold">Ops automation</p>
             <p class="text-sm text-muted">Client onboarding, follow-ups, reminders, document generation, and task routing.</p>
+          </div>
+        </UCard>
+        <UCard>
+          <div class="space-y-2">
+            <p class="font-semibold">Nuxt site / app build</p>
+            <p class="text-sm text-muted">A clean Nuxt site or lightweight app: pages, flows, forms, dashboards, and handoff-ready structure.</p>
           </div>
         </UCard>
         <UCard>

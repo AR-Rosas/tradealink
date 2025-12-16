@@ -14,7 +14,7 @@ When you hear “concierge,” it’s easy to imagine an agency.
 
 That’s not what this is.
 
-**Our concierge offer is a focused, one-person service.** The value isn’t headcount—it’s speed, taste, and a bias toward shipping.
+**This concierge offer is a focused, one-person service.** The value isn’t headcount—it’s speed, taste, and a bias toward shipping.
 
 ## The guiding rule
 
@@ -23,6 +23,16 @@ If it can be handled by a capable solo operator (non-artist), it’s usually in 
 If it needs specialists, heavy design, or licensed expertise, it’s not.
 
 ## Great fits (common requests)
+
+### Nuxt web development (core strength)
+
+- landing pages and marketing sites (Nuxt + Nuxt UI)
+- content-driven pages (Nuxt Content)
+- lightweight dashboards or internal tools
+- cleanup/refactors on an existing Nuxt codebase to improve speed, UX, and clarity
+
+This isn’t about capability—Nuxt is one of the strongest parts of the $1,500 concierge.
+The boundary is **project size**: if it’s a multi-month app with a large backend and a multi-person roadmap, it’s out of scope for a one-person concierge.
 
 ### Copywriting + offer positioning
 
@@ -49,7 +59,7 @@ If it needs specialists, heavy design, or licensed expertise, it’s not.
 
 ### Implementation support
 
-We can help wire together the pieces and get you to a working baseline.
+I can wire together the pieces and get you to a working baseline—often by shipping a clean Nuxt front-end plus the underlying ops automation.
 
 ## Not a fit (and why)
 

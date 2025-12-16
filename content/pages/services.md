@@ -14,12 +14,15 @@ These are fixed-price, done-for-you builds for founders and small teams. Deliver
 ## What you get
 
 - Working system implemented end-to-end (automation, CRM, reporting, onboarding)
+- Nuxt web build when needed (landing page, marketing site, lightweight web app)
 - Clear documentation (SOPs, naming rules, admin guides)
 - Handoff + training so you own it
 - 30 days post-launch support for fixes and questions
 
 ## Common builds
 
+- Nuxt landing pages and marketing sites (fast, clean, content-driven)
+- Nuxt dashboards and internal tools (lightweight, practical)
 - Booking + scheduling pipelines (reminders, follow-ups, reviews)
 - Lead capture → routing → follow-up inside your CRM
 - Reporting dashboards (sales/ops KPIs) with automated data pulls

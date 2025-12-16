@@ -68,7 +68,7 @@ useSeoMeta({
 
       <div class="max-w-2xl mx-auto space-y-2">
         <p class="text-base md:text-lg text-muted">
-          <span class="font-medium text-foreground">🔎 I’ll personally research, filter, and summarize</span>
+          <span class="font-medium text-foreground">I’ll personally research, filter, and summarize</span>
           the best answers to your question.
         </p>
         <p class="text-sm md:text-base text-muted">
@@ -248,13 +248,13 @@ useSeoMeta({
 
             <p class="text-sm md:text-base text-muted">
               When you don’t just need an answer—you want the system built end-to-end.
-              Fixed price, clear handoff, and documentation.
+              Fixed price, clear handoff, documentation—and Nuxt web development when the build needs a real front-end.
             </p>
 
             <div class="grid sm:grid-cols-2 gap-2 text-sm">
               <div class="flex items-start gap-2">
                 <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
-                <p>Automation + SOPs</p>
+                <p>Nuxt build + automation</p>
               </div>
               <div class="flex items-start gap-2">
                 <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
