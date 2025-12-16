@@ -23,6 +23,21 @@ const directory = defineCollection({
 export default defineContentConfig({
   collections: {
     directory,
+    featuredLinks: defineCollection({
+      type: 'page',
+      source: 'featured-links/*.md',
+      schema: z.object({
+        slug: z.string().nonempty(),
+        title: z.string(),
+        description: z.string().optional(),
+        items: z.array(z.object({
+          title: z.string(),
+          description: z.string().optional(),
+          url: z.string().url(),
+          tags: z.array(z.string()).default([])
+        })).default([])
+      })
+    }),
     pages: defineCollection({
       type: 'page',
       source: 'pages/*.md',

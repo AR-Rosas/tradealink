@@ -50,7 +50,7 @@ function getProductIcon(product: ProductItem) {
 
 useSeoMeta({
   title: 'Products — curateai.xyz',
-  description: 'A small, high-signal shelf of digital products and templates. Click in for details or jump straight to checkout.'
+  description: 'A small, high-signal shelf of digital products: templates, databases, and other assets I’d actually use.'
 })
 </script>
 
@@ -60,7 +60,9 @@ useSeoMeta({
       <div class="text-center space-y-3">
         <div class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm text-muted">
           <UIcon name="i-lucide-shopping-bag" class="w-4 h-4" />
-          <span>{{ productList.length }} products</span>
+          <span>
+            {{ productList.length }} products
+          </span>
         </div>
         <h1 class="text-3xl md:text-5xl font-bold tracking-tight">Products</h1>
         <p class="text-base md:text-lg text-muted max-w-2xl mx-auto">
