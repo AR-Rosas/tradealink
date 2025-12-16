@@ -1,70 +1,65 @@
-# Tradealink — $1,500 Business Automation & Systems + Free Tools Directory
+# Human-Filtered Search & Answers (curateai.xyz)
 
 [![Nuxt UI](https://img.shields.io/badge/Built%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 
-Tradealink offers professional business services at a fixed $1,500 price point. Choose from workflow automation, CRM setup, AI integration, custom tools, data systems, and more. Every service includes complete deliverables, comprehensive documentation, video training, and full ownership of everything we build. The site also features a curated free tools directory with 200+ resources for developers, students, freelancers, and small businesses.
+curateai.xyz is a **human-assisted research service** that delivers **clear, curated answers** to your question — without sifting through noise.
+
+You are paying for **human judgment** (filtering, verification, and clarity), not automation alone.
+
+I use multiple AI tools to assist research, but **all answers are personally verified and curated** before delivery.
 
 ## Key Features
 
-- Fixed-price professional services: $1,500 per service (delivery by scope: small systems 2–5 days; full builds 2–3 weeks)
-- Quick research service: $39 Internet Research Service delivered in 24–72 hours
-- 16+ professional services including workflow automation, CRM setup, AI integration, data systems, and more
+- Human-filtered answers delivered via email
+- Tiered pricing:
+  - **Quick Answer — $5+**
+  - **Deep Brief — $39**
 - Tally popup for intake with Whop checkout integration
-- Complete ownership package: full source code, step-by-step SOPs, video training, 30 days support
-- "Trade a link" unlock flow for the free tools directory (200+ curated resources)
+- Clear scope limits to prevent abuse and keep turnaround fast
+- Optional free directory of curated resources (content pages powered by `@nuxt/content`)
 - Directory organized as content pages powered by `@nuxt/content`
 - Mobile-first UI built on `@nuxt/ui` components and Iconify icons
 
-## Services Offered
+## Pricing (Service Tiers)
 
-### Premium Services ($1,500 flat)
+### Tier 1 — Quick Answer — $5+
 
-All services include complete deliverables, comprehensive documentation, and full ownership:
+- 3–5 item summary
+- Best links + trusted sources
+- Delivered by email (within 24h)
+- Perfect when you just need clarity
 
-- Business Workflow Automation System
-- Operations Audit + SOP Creation
-- AI Automation Integration
-- Custom Business Tool or Calculator
-- Data System Setup (Sheets/Notion/Airtable)
-- Digital Product Packaging
-- CRM Setup & Optimization
-- Appointment + Customer Pipeline Automation
-- Knowledge Base + Training System Setup
-- Lead Generation System Setup
-- Business Analytics Dashboard
-- Internal Communication System Build
-- Documentation & Compliance Package
-- Onboarding Automation for Clients
-- Productivity System Setup for CEOs & Teams
-- Reporting + Document Automation Service
+### Tier 2 — Deep Brief — $39
 
-### Internet Research Service ($39)
+- Full analysis & comparison
+- Recommendation based on context
+- Pros, cons, caveats
+- Delivered by email (24–48h)
 
-Delivered in 24–72 hours
+## How it works
 
-A focused internet research service that gathers, verifies, and organizes useful information about a person, business, product, or topic. Perfect if you’re not ready for a full $1,500 system but still want fast, useful insights.
+1. You submit your question.
+2. I research & filter the best info.
+3. You get a clean, human-organized answer via email.
 
-Includes:
-- Verified sources and citations
-- Key findings summary
-- Profiles or company overview (as applicable)
-- Competitors or related alternatives overview
-- Organized notes and links
-- Practical recommendations and next steps
+Optional AI support helps speed up research, but the final logic and judgment are human.
 
-## Features
+## Scope & safety limits
 
-- Professional Services: 16+ business services from workflow automation to CRM setup at $1,500 flat
-- Quick Research: $39 Internet Research Service delivered in 24–72 hours for fast insights
-- Smooth Scroll: "Describe Your Service" scrolls to pricing for quicker conversion
-- Tally Intake: Popup with Whop checkout integration (service booking: `q45GQg`, diagnostic: `jaeo4J`)
-- Complete Handover: Every $1,500 service includes full source code/system access, SOPs, video training, admin guides, and 30 days support
-- Directory Unlock: Tally popup (`xXVMRk`) with localStorage gate (`tradealink-directory-unlocked`) to reveal 200+ free tools
-- Organized Directory: Alphabetically sorted, mobile-first list of categories with detailed descriptions
-- SEO & Meta: `useHead` + `useSeoMeta` applied at app and page levels
-- Prerendered Routes: `/`, `/services`, `/directory`, `/blog`, and nested routes for fast static delivery
-- Content Schema: Validated via zod in `content.config.ts` for consistency across directory and blog pages
-- Icons: Iconify-powered icons (Lucide, Simple Icons) via `UIcon` shorthand like `i-lucide-arrow-right`
+### What I will research
+
+- Tool comparisons
+- Resource lists
+- Community recommendations
+- Market insights
+- Alternatives & curated links
+
+### What I won’t do
+
+- Medical/legal advice
+- Professional consulting
+- Unlimited back-and-forth
+- Academic homework answers
 
 ## Quick Start
 
@@ -86,20 +81,17 @@ pnpm preview
 
 ## User Flow
 
-### Premium Services ($1,500)
+### Quick Answer ($5+)
 
-1. **Choose a Service**: Browse the service list on the landing page (`app/pages/index.vue`) or visit the dedicated services page
-2. **Book via Tally**: Click "Describe Your Service" to open a Tally popup that collects project details
-3. **Checkout via Whop**: On form submission, redirect to Whop for secure $1,500 payment
-4. **Service Delivery**: Receive complete deliverables with documentation (small systems: 2–5 days; full builds: 2–3 weeks)
-5. **Complete Handover**: Get full ownership including source code, step-by-step SOPs, video walkthroughs, admin guides, and 30 days of post-launch support
+1. **Submit your question** via the intake popup
+2. **Show checkout** (Whop)
+3. **Receive your curated answer via email** (within 24h)
 
-### Internet Research Service ($39)
+### Deep Brief ($39)
 
-1. **Order Research**: Click "Get $39 Internet Research Service" on the landing page
-2. **Submit via Tally**: Provide the topic, person, business, or product to research
-3. **Fast Checkout**: Pay $39 via Whop checkout
-4. **Receive Findings**: Get organized research within 24–72 hours including verified sources, summaries, links, and recommendations
+1. **Submit your question + context** via the intake popup
+2. **Show checkout** (Whop)
+3. **Receive your deep brief via email** (24–48h)
 
 ### Free Tools Directory
 
@@ -127,36 +119,11 @@ Markdown pages live in `content/directory/` and include link-based sections:
 - Web Development (`web-development.md`)
 - Web Design (`web-design.md`)
 
-## About
+## Checkout copy (important)
 
-Tradealink delivers professional business services at a transparent $1,500 fixed price. We handle workflow automation, CRM setup, AI integration, custom tools, data systems, and more. Every service includes complete deliverables, comprehensive documentation, video training, and full ownership of everything we build.
+Users are purchasing a **human-filtered answer brief** delivered by email.
 
-### How We Work
-
-- **Intake**: Book via Tally; we gather the essentials about your service needs
-- **Kickoff**: Align on requirements, deliverables, and timeline (small systems: 2–5 days; full builds: 2–3 weeks)
-- **Execution**: Build your system with best-practice tools and frameworks
-- **Handoff**: Complete deliverables, documentation, video training, and full system ownership
-
-### What's Included
-
-- **Fixed Price**: $1,500 flat per service, no hidden fees or subscriptions
-- **Complete Deliverables**: Fully functional systems with documentation
-- **Full Ownership**: Source code, step-by-step SOPs, video walkthroughs, admin guides, 30 days support
-- **Expert Delivery**: Professional implementation (small systems: 2–5 days; full builds: 2–3 weeks)
-- **No Accounts Needed**: Whop handles secure access automatically
-
-### Complete Handover Package
-
-Every service purchase includes:
-
-- Full source code and system access
-- Step-by-step SOP documentation
-- Video walkthroughs and tutorials
-- Admin and maintenance guides
-- 30 days of post-launch support
-- Commercial usage rights
-- No vendor lock-in
+This is **not automated output only**.
 
 ### Accessibility & Performance
 

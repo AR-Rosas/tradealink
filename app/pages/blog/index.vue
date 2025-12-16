@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const fallbackTitle = 'Tradealink Field Notes — Blog'
-const fallbackDescription = 'Short, practical posts on micro tasks, white-label platforms, and using AI + humans to deliver better work.'
+const fallbackTitle = 'curateai.xyz — Notes'
+const fallbackDescription = 'Short, practical notes on research, clarity, and finding the best sources fast.'
 
 const { data: page } = await useAsyncData('blog-page', async () => {
   return await queryCollection('pages').where('slug', '=', 'blog').first()

@@ -15,32 +15,34 @@ const isOpen = ref(false)
 
           <!-- Center: Nav Links (Desktop) -->
           <nav class="hidden md:flex items-center gap-6">
-            <ULink to="/services" class="text-sm font-medium hover:text-primary transition-colors">Services</ULink>
-            <ULink to="/" class="text-sm font-medium hover:text-primary transition-colors">Pricing</ULink>
-            <ULink to="/directory" class="text-sm font-medium hover:text-primary transition-colors">Free Tools</ULink>
+            <ULink to="/#how-it-works" class="text-sm font-medium hover:text-primary transition-colors">How it works</ULink>
+            <ULink to="/#pricing" class="text-sm font-medium hover:text-primary transition-colors">Pricing</ULink>
+            <ULink to="/concierge" class="text-sm font-medium hover:text-primary transition-colors">Concierge ($1,500)</ULink>
+            <ULink to="/products" class="text-sm font-medium hover:text-primary transition-colors">Products</ULink>
+            <ULink to="/directory" class="text-sm font-medium hover:text-primary transition-colors">Free Directory</ULink>
           </nav>
 
           <!-- Right: CTA + Color Mode + Mobile Menu -->
           <div class="flex items-center gap-3">
-            <UButton 
-              to="/" 
-              color="primary" 
-              variant="soft" 
-              size="xs" 
+            <UButton
+              to="/"
+              color="primary"
+              variant="soft"
+              size="xs"
               class="hidden sm:inline-flex"
             >
-              Book Service
+              Get Quick Answer ($5)
             </UButton>
             <ColorModeButton />
-            
+
             <UButton
               :icon="isOpen ? 'i-lucide-x' : 'i-lucide-menu'"
               color="neutral"
               variant="ghost"
               size="sm"
               class="md:hidden"
-              @click="isOpen = !isOpen"
               aria-label="Toggle menu"
+              @click="isOpen = !isOpen"
             />
           </div>
         </div>
@@ -58,24 +60,30 @@ const isOpen = ref(false)
       <div v-if="isOpen" class="md:hidden border-b border-gray-200 dark:border-gray-800 bg-background shadow-lg">
         <UContainer class="py-4">
           <nav class="flex flex-col gap-4">
-            <ULink to="/services" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
-              Services
+            <ULink to="/#how-it-works" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
+              How it works
             </ULink>
-            <ULink to="/" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
+            <ULink to="/#pricing" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
               Pricing
             </ULink>
-            <ULink to="/directory" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
-              Free Tools
+            <ULink to="/concierge" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
+              Concierge ($1,500)
             </ULink>
-            <UButton 
-              to="/" 
-              color="primary" 
-              variant="soft" 
-              size="sm" 
+            <ULink to="/products" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
+              Products
+            </ULink>
+            <ULink to="/directory" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
+              Free Directory
+            </ULink>
+            <UButton
+              to="/"
+              color="primary"
+              variant="soft"
+              size="sm"
               block
               @click="isOpen = false"
             >
-              Book Service
+              Get Quick Answer ($5)
             </UButton>
           </nav>
         </UContainer>
@@ -93,10 +101,10 @@ const isOpen = ref(false)
         <div class="flex flex-col gap-2">
           <NuxtLink to="/" class="flex items-center gap-2 group">
             <UIcon name="i-lucide-zap" class="w-4 h-4 text-primary" />
-            <span class="font-semibold">Tradealink</span>
+            <span class="font-semibold">curateai.xyz</span>
           </NuxtLink>
           <p class="text-xs text-muted">
-            Business Automation & Systems
+            Human-filtered answers delivered by email
           </p>
         </div>
       </template>
@@ -104,8 +112,10 @@ const isOpen = ref(false)
       <template #right>
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div class="flex flex-col sm:flex-row gap-3 text-xs">
-            <ULink to="/services" class="text-muted hover:text-primary transition-colors">Services</ULink>
-            <ULink to="/" class="text-muted hover:text-primary transition-colors">Pricing</ULink>
+            <ULink to="/#how-it-works" class="text-muted hover:text-primary transition-colors">How it works</ULink>
+            <ULink to="/#pricing" class="text-muted hover:text-primary transition-colors">Pricing</ULink>
+            <ULink to="/concierge" class="text-muted hover:text-primary transition-colors">Concierge</ULink>
+            <ULink to="/products" class="text-muted hover:text-primary transition-colors">Products</ULink>
           </div>
           <p class="text-xs text-muted">
             © {{ new Date().getFullYear() }}

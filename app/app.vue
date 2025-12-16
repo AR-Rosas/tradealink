@@ -12,8 +12,8 @@ useHead({
 })
 
 // FIXED: Updated title/description to match new positioning
-const title = 'Tradealink — $1,500 Business Automation & Systems'
-const description = 'Fixed-price business systems, workflow automation, and custom tools. We design, build, and ship complete systems with full ownership.'
+const title = 'curateai.xyz — Human-Filtered Search & Answers'
+const description = 'Human-verified research and curated answers delivered via email. Clear, trusted summaries without the noise. Minimum $5.'
 
 useSeoMeta({
   title,

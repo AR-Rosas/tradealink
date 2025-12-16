@@ -1,13 +1,41 @@
 ---
 slug: services
-title: Our Services
-description: Professional business services at $1,500 flat. Delivery timeline depends on the service.
+title: Concierge Services
+description: Done-for-you business systems at $1,500 flat. Timeline depends on scope. Includes documentation, handoff, and training.
 ---
 
-# Our Services — $1,500 Each
+# Concierge Services — $1,500 Flat
 
-Tell us what you need, and we'll build the system end-to-end — automation, documentation, and handoff included. Delivery timeline depends on scope: **small systems & audits take 2–5 days; full automation/CRM builds take 2–3 weeks**. We handle the everyday operations most teams wrestle with: bookings that sync to calendars, emails that reply themselves, invoices that generate automatically, CRMs that stay updated, staff notifications, and weekly reports that make your numbers obvious. If you need deeper work, we audit how things really run, clean up workflows, write clear SOPs, set up onboarding, build simple task systems, and give you a KPI dashboard so you can see where things move (or stall).
+When you don’t just need an answer—you want the system built end-to-end.
 
-Beyond operations, we ship focused tools and systems: AI that removes repetitive work, custom calculators and utilities (code or no-code), tidy data setups in Sheets/Notion/Airtable with automations and dashboards, CRM pipelines that actually move deals, appointment pipelines for service businesses (reminders, follow-ups, reviews, scheduling), clean knowledge bases and onboarding guides, lead capture + routing + follow-ups wired into your CRM, one dashboard for sales/ops with automated data pulls, Slack/Discord structured so people find what they need, documented files with real naming rules and backups, smooth client onboarding (intake → contract → payment → folders → kickoff), practical productivity frameworks for teams, and reporting/document automation that turns hours into minutes. Every project includes **complete ownership and training** — full source code/system access, step-by-step SOPs, video walkthroughs, admin guides, and 30 days of post-launch support — so you aren't dependent on us forever. Fixed price: **$1,500**. Clear docs. Working systems. No fluff.
+These are fixed-price, done-for-you builds for founders and small teams. Delivery timeline depends on scope:
+**small audits & quick systems take 2–5 days; full automation / CRM builds take 2–3 weeks.**
 
-[Book Your Service](#task-pricing)
+## What you get
+
+- Working system implemented end-to-end (automation, CRM, reporting, onboarding)
+- Clear documentation (SOPs, naming rules, admin guides)
+- Handoff + training so you own it
+- 30 days post-launch support for fixes and questions
+
+## Common builds
+
+- Booking + scheduling pipelines (reminders, follow-ups, reviews)
+- Lead capture → routing → follow-up inside your CRM
+- Reporting dashboards (sales/ops KPIs) with automated data pulls
+- Document automation (turn hours into minutes)
+- Airtable/Notion/Sheets systems with automations + tidy data structure
+- Internal knowledge base + onboarding workflows
+- Copywriting + offer positioning (landing pages, email sequences, outreach scripts)
+- Recruiting ops (job posts, scorecards, screening pipeline, interview loops)
+- Slack/Discord organization so people find what they need
+
+## Pricing
+
+Fixed price: **$1,500**.
+
+If you’re not sure whether your request is a Quick Answer / Deep Brief / Concierge build, start with a Deep Brief and I’ll tell you the best path.
+
+[Start with a Deep Brief](/#pricing)
+
+[View the Concierge page](/concierge)

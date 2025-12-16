@@ -13,8 +13,8 @@ if (!page.value) {
   })
 }
 
-const title = 'All Services — Tradealink'
-const description = 'Professional business services at $1,500 flat. Delivery timeline depends on the service. Each includes complete handover with full ownership and training.'
+const title = 'Concierge Services — curateai.xyz'
+const description = 'Done-for-you systems and implementation at $1,500 flat. Timeline depends on scope. Includes documentation, handoff, and training.'
 
 useSeoMeta({
   title,

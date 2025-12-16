@@ -31,9 +31,11 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
     '/services': { prerender: true },
+    '/concierge': { prerender: true },
+    '/products': { prerender: true },
     '/pages': { redirect: '/' },
 
-
+    '/products/**': { prerender: true },
     '/directory/**': { prerender: true }
   },
 

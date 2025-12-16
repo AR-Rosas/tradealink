@@ -42,9 +42,9 @@ if (!category.value) {
   })
 }
 
-const fallbackDescription = 'Field notes, experiments, and templates from the Tradealink crew.'
+const fallbackDescription = 'Curated resources and links from curateai.xyz.'
 
-const metaTitle = computed(() => category.value ? `${category.value.title} · Tradealink Field Notes` : 'Tradealink Field Notes')
+const metaTitle = computed(() => category.value ? `${category.value.title} · curateai.xyz` : 'curateai.xyz')
 const metaDescription = computed(() => category.value?.description ?? fallbackDescription)
 const metaImage = computed(() => category.value?.heroImage)
 
@@ -126,7 +126,7 @@ useSeoMeta({
           :src="category.heroImage"
           :alt="category.title"
           class="w-full h-auto"
-        />
+        >
       </div>
 
       <!-- Divider -->
