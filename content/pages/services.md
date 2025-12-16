@@ -1,10 +1,10 @@
 ---
 slug: services
-title: Concierge Services
+title: Full-Service Build-Out
 description: Done-for-you business systems at $1,500 flat. Timeline depends on scope. Includes documentation, handoff, and training.
 ---
 
-# Concierge Services — $1,500 Flat
+# Full-Service Build-Out — $1,500 Flat
 
 When you don’t just need an answer—you want the system built end-to-end.
 
@@ -37,8 +37,8 @@ These are fixed-price, done-for-you builds for founders and small teams. Deliver
 
 Fixed price: **$1,500**.
 
-If you’re not sure whether your request is a Quick Answer / Deep Brief / Concierge build, start with a Deep Brief and I’ll tell you the best path.
+If you’re not sure whether your request is a Quick Answer / Deep Brief / Build-Out, start with a Deep Brief and I’ll tell you the best path.
 
 [Start with a Deep Brief](/#pricing)
 
-[View the Concierge page](/concierge)
+[View the Build-Out page](/build)

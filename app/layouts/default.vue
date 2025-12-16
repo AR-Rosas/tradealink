@@ -17,7 +17,7 @@ const isOpen = ref(false)
           <nav class="hidden md:flex items-center gap-6">
             <ULink to="/#how-it-works" class="text-sm font-medium hover:text-primary transition-colors">How it works</ULink>
             <ULink to="/#pricing" class="text-sm font-medium hover:text-primary transition-colors">Pricing</ULink>
-            <ULink to="/concierge" class="text-sm font-medium hover:text-primary transition-colors">Concierge ($1,500)</ULink>
+            <ULink to="/build" class="text-sm font-medium hover:text-primary transition-colors">Build-Out ($1,500)</ULink>
             <ULink to="/products" class="text-sm font-medium hover:text-primary transition-colors">Products</ULink>
             <ULink to="/directory" class="text-sm font-medium hover:text-primary transition-colors">Free Directory</ULink>
           </nav>
@@ -66,8 +66,8 @@ const isOpen = ref(false)
             <ULink to="/#pricing" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
               Pricing
             </ULink>
-            <ULink to="/concierge" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
-              Concierge ($1,500)
+            <ULink to="/build" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
+              Build-Out ($1,500)
             </ULink>
             <ULink to="/products" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
               Products
@@ -114,7 +114,7 @@ const isOpen = ref(false)
           <div class="flex flex-col sm:flex-row gap-3 text-xs">
             <ULink to="/#how-it-works" class="text-muted hover:text-primary transition-colors">How it works</ULink>
             <ULink to="/#pricing" class="text-muted hover:text-primary transition-colors">Pricing</ULink>
-            <ULink to="/concierge" class="text-muted hover:text-primary transition-colors">Concierge</ULink>
+            <ULink to="/build" class="text-muted hover:text-primary transition-colors">Build-Out</ULink>
             <ULink to="/products" class="text-muted hover:text-primary transition-colors">Products</ULink>
           </div>
           <p class="text-xs text-muted">

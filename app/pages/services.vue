@@ -13,7 +13,7 @@ if (!page.value) {
   })
 }
 
-const title = 'Concierge Services — curateai.xyz'
+const title = 'Full-Service Build-Out — curateai.xyz'
 const description = 'Done-for-you Nuxt web development + business systems at $1,500 flat. Timeline depends on scope. Includes documentation, handoff, and training.'
 
 useSeoMeta({

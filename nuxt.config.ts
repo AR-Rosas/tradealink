@@ -31,7 +31,9 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
     '/services': { prerender: true },
-    '/concierge': { prerender: true },
+    '/build': { prerender: true },
+    '/concierge': { redirect: { to: '/build', statusCode: 301 } },
+    '/concierge/**': { redirect: { to: '/build', statusCode: 301 } },
     '/products': { prerender: true },
     '/pages': { redirect: '/' },
 

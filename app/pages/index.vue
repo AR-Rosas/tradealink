@@ -15,8 +15,8 @@ const DEEP_BRIEF_TALLY_FORM_ID = 'jaeo4J'
 const QUICK_ANSWER_CHECKOUT_URL = 'https://whop.com'
 const DEEP_BRIEF_CHECKOUT_URL = 'https://whop.com/tradealink/systems-diagnostic-report/'
 
-// High-ticket concierge offer (kept as a separate path from the fast answer service).
-const CONCIERGE_SERVICES_URL = '/concierge'
+// High-ticket build-out offer (kept as a separate path from the fast answer service).
+const BUILD_OUT_URL = '/build'
 
 const openTallyThenCheckout = (formId: string, checkoutUrl: string) => {
   if (!import.meta.client) return
@@ -244,7 +244,7 @@ useSeoMeta({
               <UBadge color="primary" variant="solid">$1,500</UBadge>
             </div>
 
-            <h3 class="text-xl font-bold">Concierge Build / Done-for-you System</h3>
+            <h3 class="text-xl font-bold">Full-Service Build-Out / Done-for-you System</h3>
 
             <p class="text-sm md:text-base text-muted">
               When you don’t just need an answer—you want the system built end-to-end.
@@ -273,12 +273,12 @@ useSeoMeta({
 
           <div class="space-y-3">
             <UButton
-              :to="CONCIERGE_SERVICES_URL"
+              :to="BUILD_OUT_URL"
               color="primary"
               size="lg"
               block
             >
-              View Concierge ($1,500)
+              View Build-Out ($1,500)
             </UButton>
 
             <p class="text-xs text-muted">

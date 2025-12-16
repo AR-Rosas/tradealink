@@ -1,10 +1,10 @@
 <script setup lang="ts">
 // NOTE: Replace with your real checkout / booking URL when ready.
-const CONCIERGE_CHECKOUT_URL = 'https://whop.com'
+const BUILD_OUT_CHECKOUT_URL = 'https://whop.com'
 
 useSeoMeta({
-  title: 'Concierge Build — $1,500 Done-for-you System · curateai.xyz',
-  description: 'Fixed-price $1,500 concierge build: Nuxt web development + automations + documentation, with a clean handoff. Ideal when you want implementation, not just an answer.'
+  title: 'Full-Service Build-Out — $1,500 Done-for-you System · curateai.xyz',
+  description: 'Fixed-price $1,500 full-service build-out: Nuxt web development + automations + documentation, with a clean handoff. Ideal when you want implementation, not just an answer.'
 })
 </script>
 
@@ -19,7 +19,7 @@ useSeoMeta({
       </div>
 
       <h1 class="text-3xl md:text-5xl font-bold tracking-tight">
-        Concierge Build: I build and ship (Nuxt-first).
+        Full-Service Build-Out (Nuxt-first)
       </h1>
 
       <p class="text-base md:text-lg text-muted max-w-3xl mx-auto">
@@ -28,7 +28,7 @@ useSeoMeta({
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-        <UButton :to="CONCIERGE_CHECKOUT_URL" size="lg" color="primary">
+        <UButton :to="BUILD_OUT_CHECKOUT_URL" size="lg" color="primary">
           Start a $1,500 Build
         </UButton>
         <UButton to="/#pricing" size="lg" color="neutral" variant="outline">
@@ -77,7 +77,7 @@ useSeoMeta({
       <UCard>
         <div class="space-y-6">
           <div class="text-center space-y-2">
-            <h2 class="text-2xl md:text-3xl font-bold">What Concierge can cover</h2>
+            <h2 class="text-2xl md:text-3xl font-bold">What the Build-Out can cover</h2>
             <p class="text-sm md:text-base text-muted max-w-2xl mx-auto">
               If one competent operator can ship it fast in Nuxt (without needing specialist design/art), it’s usually a fit.
             </p>
@@ -134,7 +134,7 @@ useSeoMeta({
           </div>
 
           <p class="text-xs text-muted">
-            If you’re unsure: start with a Deep Brief ($39). I’ll tell you whether Concierge is the right path.
+            If you’re unsure: start with a Deep Brief ($39). I’ll tell you whether the Build-Out is the right path.
           </p>
         </div>
       </UCard>
@@ -301,12 +301,12 @@ useSeoMeta({
           <div class="space-y-1">
             <h3 class="text-xl font-bold">Ready to get it built?</h3>
             <p class="text-sm text-muted">
-              Start the $1,500 concierge build—or begin with a Deep Brief if you want a recommendation first.
+              Start the $1,500 build-out—or begin with a Deep Brief if you want a recommendation first.
             </p>
           </div>
 
           <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
-            <UButton :to="CONCIERGE_CHECKOUT_URL" color="primary" size="lg" class="sm:min-w-56" block>
+            <UButton :to="BUILD_OUT_CHECKOUT_URL" color="primary" size="lg" class="sm:min-w-56" block>
               Start a $1,500 Build
             </UButton>
             <UButton to="/#pricing" color="neutral" variant="outline" size="lg" class="sm:min-w-56" block>
