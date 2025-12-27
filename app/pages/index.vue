@@ -8,11 +8,9 @@ declare global {
   }
 }
 
-const QUICK_ANSWER_TALLY_FORM_ID = 'q45GQg'
 const DEEP_BRIEF_TALLY_FORM_ID = 'jaeo4J'
 
 // NOTE: Replace these with your real Whop product URLs when ready.
-const QUICK_ANSWER_CHECKOUT_URL = 'https://whop.com'
 const DEEP_BRIEF_CHECKOUT_URL = 'https://whop.com/tradealink/systems-diagnostic-report/'
 
 // High-ticket build-out offer (kept as a separate path from the fast answer service).
@@ -36,7 +34,6 @@ const openTallyThenCheckout = (formId: string, checkoutUrl: string) => {
   })
 }
 
-const openQuickAnswer = () => openTallyThenCheckout(QUICK_ANSWER_TALLY_FORM_ID, QUICK_ANSWER_CHECKOUT_URL)
 const openDeepBrief = () => openTallyThenCheckout(DEEP_BRIEF_TALLY_FORM_ID, DEEP_BRIEF_CHECKOUT_URL)
 
 useHead({
@@ -77,10 +74,7 @@ useSeoMeta({
       </div>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-        <UButton size="lg" color="primary" @click="openQuickAnswer">
-          Get Quick Answer ($5)
-        </UButton>
-        <UButton size="lg" color="neutral" variant="outline" @click="openDeepBrief">
+        <UButton size="lg" color="primary" @click="openDeepBrief">
           Get Deep Brief ($39)
         </UButton>
       </div>
@@ -156,50 +150,14 @@ useSeoMeta({
     <section id="pricing" class="max-w-5xl mx-auto w-full space-y-6">
       <div class="text-center space-y-2">
         <h2 class="text-2xl md:text-3xl font-bold">Pricing</h2>
-        <p class="text-sm md:text-base text-muted">Choose the depth you need. Both options are delivered via email.</p>
+        <p class="text-sm md:text-base text-muted">Professional research and development services for your business.</p>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-6">
-        <UCard class="border border-primary/20">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between gap-3">
-              <div>
-                <p class="text-sm text-muted">Tier 1</p>
-                <p class="text-xl font-bold">Quick Answer</p>
-              </div>
-              <UBadge color="primary" variant="soft" size="lg">$5+</UBadge>
-            </div>
-
-            <div class="space-y-2">
-              <div class="flex items-start gap-2">
-                <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
-                <p class="text-sm">3–5 item summary</p>
-              </div>
-              <div class="flex items-start gap-2">
-                <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
-                <p class="text-sm">Best links + trusted sources</p>
-              </div>
-              <div class="flex items-start gap-2">
-                <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
-                <p class="text-sm">Delivered by email (within 24h)</p>
-              </div>
-              <div class="flex items-start gap-2">
-                <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
-                <p class="text-sm">Perfect when you just need clarity</p>
-              </div>
-            </div>
-
-            <UButton color="primary" block @click="openQuickAnswer">
-              Get Quick Answer ($5)
-            </UButton>
-          </div>
-        </UCard>
-
         <UCard class="border-2 border-primary/30">
           <div class="space-y-4">
             <div class="flex items-center justify-between gap-3">
               <div>
-                <p class="text-sm text-muted">Tier 2</p>
                 <p class="text-xl font-bold">Deep Brief</p>
               </div>
               <UBadge color="primary" variant="solid" size="lg">$39</UBadge>
@@ -240,33 +198,32 @@ useSeoMeta({
         <div class="relative grid lg:grid-cols-[1.25fr_0.75fr] gap-6 items-start">
           <div class="space-y-3">
             <div class="flex items-center gap-3">
-              <UBadge color="neutral" variant="soft">Tier 3</UBadge>
               <UBadge color="primary" variant="solid">$1,500</UBadge>
             </div>
 
-            <h3 class="text-xl font-bold">Full-Service Build-Out / Done-for-you System</h3>
+            <h3 class="text-xl font-bold">Whop.com + Nuxt System Website</h3>
 
             <p class="text-sm md:text-base text-muted">
-              When you don’t just need an answer—you want the system built end-to-end.
-              Fixed price, clear handoff, documentation—and Nuxt web development when the build needs a real front-end.
+              A complete digital product platform with Nuxt front-end, Whop integration for memberships & sales, and full deployment.
+              Fixed scope, clean handoff, documentation included—perfect for launching your digital product business.
             </p>
 
             <div class="grid sm:grid-cols-2 gap-2 text-sm">
               <div class="flex items-start gap-2">
                 <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
-                <p>Nuxt build + automation</p>
+                <p>Nuxt 4 + Nuxt UI landing page</p>
               </div>
               <div class="flex items-start gap-2">
                 <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
-                <p>Full ownership + training</p>
+                <p>Whop checkout & membership integration</p>
               </div>
               <div class="flex items-start gap-2">
                 <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
-                <p>CRM / ops / reporting setups</p>
+                <p>Cloudflare deployment setup</p>
               </div>
               <div class="flex items-start gap-2">
                 <UIcon name="i-lucide-check" class="w-4 h-4 text-primary mt-0.5" />
-                <p>Timeline depends on scope</p>
+                <p>Full source code + documentation</p>
               </div>
             </div>
           </div>
