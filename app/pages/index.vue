@@ -47,7 +47,7 @@ useHead({
 
 useSeoMeta({
   title: 'Human-Filtered Search & Answer Service — curateai.xyz',
-  description: 'Get clear, curated answers without sifting through noise. Human-verified research delivered via email. Minimum $5.'
+  description: 'Get clear, curated answers without sifting through noise. Human-verified research delivered via email.'
 })
 </script>
 
@@ -69,7 +69,7 @@ useSeoMeta({
           the best answers to your question.
         </p>
         <p class="text-sm md:text-base text-muted">
-          Delivered directly via email. Minimum $5.
+          Delivered directly via email.
         </p>
       </div>
 

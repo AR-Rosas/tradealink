@@ -24,15 +24,6 @@ const isOpen = ref(false)
 
           <!-- Right: CTA + Color Mode + Mobile Menu -->
           <div class="flex items-center gap-3">
-            <UButton
-              to="/"
-              color="primary"
-              variant="soft"
-              size="xs"
-              class="hidden sm:inline-flex"
-            >
-              Get Quick Answer ($5)
-            </UButton>
             <ColorModeButton />
 
             <UButton
@@ -75,16 +66,6 @@ const isOpen = ref(false)
             <ULink to="/directory" class="text-sm font-medium hover:text-primary transition-colors" @click="isOpen = false">
               Free Directory
             </ULink>
-            <UButton
-              to="/"
-              color="primary"
-              variant="soft"
-              size="sm"
-              block
-              @click="isOpen = false"
-            >
-              Get Quick Answer ($5)
-            </UButton>
           </nav>
         </UContainer>
       </div>
